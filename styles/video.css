@@ -14,7 +14,13 @@
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 10px;
+  overflow: hidden; /* Ensure text beyond max lines is hidden */
+  text-overflow: ellipsis; /* Add ellipsis (...) to indicate truncated text */
+  display: -webkit-box; /* For older webkit browsers */
+  -webkit-line-clamp: 2; /* Limit number of lines to show */
+  -webkit-box-orient: vertical; /* Set orientation to vertical */
 }
+
 
 .video-info-grid {
   display: grid;
