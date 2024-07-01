@@ -54,7 +54,7 @@
 }
 
 /*media query*/
-
+/* Mobile View: One video per row */
 @media (max-width: 750px) {
   .video-grid {
     grid-template-columns: 1fr;
@@ -81,6 +81,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
 .video-time {
   font-size: 12px;
   font-weight: 500;
