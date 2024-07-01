@@ -57,22 +57,30 @@
 
 @media (max-width: 750px) {
   .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Desktop View: Two videos per row */
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 751px) {
+/* Laptop View: Three videos per row */
+@media (min-width: 1000px) and (max-width: 1299px) {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 1000px) {
+/* Computer View: Four videos per row */
+@media (min-width: 1300px) {
   .video-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
 .video-time {
   font-size: 12px;
   font-weight: 500;
